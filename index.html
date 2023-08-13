@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="public/build/css/app.css" />
+
+    <title>Invitación</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <h1>Leonel & Yasmin</h1>
+        <nav class="navegacion-principal">
+          <a href="#lineup">Galería</a>
+          <a href="#galeria">Honores</a>
+          <a href="#boletos">Ubicación</a>
+        </nav>
+      </div>
+    </header>
+    <div class="video">
+      <div class="overlay"></div>
+      <picture class="pic">
+        <source srcset="public/build/img/portada.jpg" type="image/jpg" />
+        <!-- <source srcset="build/img/blog1.jpg" type="image/jpeg"> -->
+        <img
+          class="portada"
+          loading="lazy"
+          src="public/build/img/portada.jpg"
+          alt="texto entrada blog"
+        />
+      </picture>
+    </div>
+    <main class="main">
+      <section class="dias-juntos">
+        <h2>5 de Noviembre de 2023</h2>
+        <div id="clock">
+          <div class="fecha">
+            <div id="dias"></div>
+            <p class="texto-fecha">D</p>
+          </div>
+
+          <div class="fecha">
+            <div id="horas"></div>
+            <p class="texto-fecha">H</p>
+          </div>
+
+          <div class="fecha">
+            <div id="minutos"></div>
+            <p class="texto-fecha">M</p>
+          </div>
+
+          <div class="fecha">
+            <div id="segundos"></div>
+            <p class="texto-fecha">S</p>
+          </div>
+        </div>
+      </section>
+
+      <div
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        class="swiper mySwiper2" id="swip-ani"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen3.jpg" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen10.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen9.jpg" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen3.jpg" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen10.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="public/build/img/imagen9.jpg" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="public/build/js/scrollreveal.js"></script>
+    <script src="public/build/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          loop: true,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+      </script>
+  </body>
+</html>
