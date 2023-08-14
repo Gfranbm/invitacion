@@ -1,10 +1,14 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap");
-
+/* @font-face {
+  font-family: 'Amsterdam';
+  src: url('/public/build/fonts/') format('truetype');
+} */
 
 :root {
   --verde: rgb(5, 65, 59);
   --dorado: rgb(195, 157, 70);
+  --dorado-obscuro: rgb(185, 147, 58);
 }
 html {
   line-height: 1.15;
@@ -256,6 +260,9 @@ h3 {
   text-align: center;
   font-family: 'Dancing Script', cursive;
   font-size: 55px;
+  text-shadow: 0 0 0.1em var(--dorado-obscuro), 0 0 0.2em var(--dorado-obscuro),
+		0 0 0.2em var(--dorado-obscuro);
+    -webkit-text-stroke: 0.2px rgb(243, 239, 239);
 }
 @media (min-width: 768px) {
   .header h1 {
@@ -326,14 +333,14 @@ h3 {
 }
 
 .fondo-info{
-  margin-top: -5rem;
   position: relative;
   overflow: clip;
+
 }
 
 .info img {
-  width: 600px;
-  object-fit: cover;
+  width: 100%;
+  transform: scale(1.5);
 }
 
 .info p{
@@ -368,6 +375,7 @@ h3 {
   font-size: 35px;
   color: var(--verde);
   font-weight: 600;
+  overflow: hidden;
 }
 
 .andperson::before,
