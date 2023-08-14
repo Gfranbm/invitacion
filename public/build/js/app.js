@@ -37,7 +37,7 @@ function eventListener() {
   //animation divs
   window.sr = ScrollReveal();
   sr.reveal(".header", {
-    duration: 1500,
+    duration: 3000,
     origin: "bottom",
     distance: "-100px",
   });

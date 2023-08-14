@@ -8,6 +8,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="public/build/css/app.css" />
 
@@ -40,15 +46,19 @@
     </div>
     <main class="main">
       <section class="info" id="informacion">
-        <p>Ha llegado nuestro momento...</p>
+        <p>Llegó el día...</p>
         <h2 class="date">¡Nos casamos!</h2>
-        <img src="public/build/img/rama_greeny.png" alt="rama_verde" />
+        <div class="fondo-info">
+          <img src="public/build/img/hoja6 (1).png" alt="hoja" />
+        </div>
         <div class="nombres">
-          <h3 class="content-nombres">Yasmin<span>Barrios Martines</span></h3>
+          <h3 class="content-nombres">Leonel<span>Ramírez Escobar</span></h3>
           <div class="andperson">
             <span class="content-andperson">&</span>
           </div>
-          <h3 class="content-nombres">Leonel<span>Ramírez Gutierrez</span></h3>
+          <h3 class="content-nombres">
+            Yasmin<span>Quiñonez Chinchilla</span>
+          </h3>
         </div>
         <h2 class="date">5 | Noviembre | 2023</h2>
       </section>
@@ -77,68 +87,72 @@
       </section>
       <section id="galeria">
         <div
-        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-        class="swiper mySwiper2" id="swip-ani"
-      >
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen8.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen3.jpg" />
-          </div>
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+          class="swiper mySwiper2"
+          id="swip-ani"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen3.jpg" />
+            </div>
 
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen10.jpg" />
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen10.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen4.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen9.jpg" />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen4.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen1.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen2.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen9.jpg" />
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen3.jpg" />
+            </div>
+
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen10.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img loading="lazy" src="public/build/img/imagen9.jpg" />
+            </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-      <div thumbsSlider="" class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen8.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen3.jpg" />
-          </div>
-
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen10.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen4.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen1.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen2.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img loading="lazy" src="public/build/img/imagen9.jpg" />
-          </div>
-        </div>
-      </div>
       </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="public/build/js/scrollreveal.js"></script>
     <script src="public/build/js/app.js"></script>
-   
 
     <script>
       var swiper = new Swiper(".mySwiper", {
