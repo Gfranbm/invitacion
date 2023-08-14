@@ -18,17 +18,18 @@
       <div class="contenedor contenido-header">
         <h1>Leonel & Yasmin</h1>
         <nav class="navegacion-principal">
-          <a href="#lineup">Galería</a>
-          <a href="#galeria">Honores</a>
-          <a href="#boletos">Ubicación</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#galeria">Galería</a>
+          <a href="#honores">Honores</a>
+          <a href="#ubicacion">Ubicación</a>
         </nav>
       </div>
     </header>
-    <div class="video">
+
+    <div class="imagen-portada" id="inicio">
       <div class="overlay"></div>
       <picture class="pic">
         <source srcset="public/build/img/portada.jpg" type="image/jpg" />
-        <!-- <source srcset="build/img/blog1.jpg" type="image/jpeg"> -->
         <img
           class="portada"
           loading="lazy"
@@ -38,8 +39,20 @@
       </picture>
     </div>
     <main class="main">
+      <section class="info" id="informacion">
+        <p>Ha llegado nuestro momento...</p>
+        <h2 class="date">¡Nos casamos!</h2>
+        <img src="public/build/img/rama_greeny.png" alt="rama_verde" />
+        <div class="nombres">
+          <h3 class="content-nombres">Yasmin<span>Barrios Martines</span></h3>
+          <div class="andperson">
+            <span class="content-andperson">&</span>
+          </div>
+          <h3 class="content-nombres">Leonel<span>Ramírez Gutierrez</span></h3>
+        </div>
+        <h2 class="date">5 | Noviembre | 2023</h2>
+      </section>
       <section class="dias-juntos">
-        <h2>5 de Noviembre de 2023</h2>
         <div id="clock">
           <div class="fecha">
             <div id="dias"></div>
@@ -62,33 +75,33 @@
           </div>
         </div>
       </section>
-
-      <div
+      <section id="galeria">
+        <div
         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
         class="swiper mySwiper2" id="swip-ani"
       >
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="public/build/img/imagen8.jpg" />
+            <img loading="lazy" src="public/build/img/imagen8.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen3.jpg" />
+            <img loading="lazy" src="public/build/img/imagen3.jpg" />
           </div>
 
           <div class="swiper-slide">
-            <img src="public/build/img/imagen10.jpg" />
+            <img loading="lazy" src="public/build/img/imagen10.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen4.jpg" />
+            <img loading="lazy" src="public/build/img/imagen4.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen1.jpg" />
+            <img loading="lazy" src="public/build/img/imagen1.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen2.jpg" />
+            <img loading="lazy" src="public/build/img/imagen2.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen9.jpg" />
+            <img loading="lazy" src="public/build/img/imagen9.jpg" />
           </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -97,53 +110,54 @@
       <div thumbsSlider="" class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="public/build/img/imagen8.jpg" />
+            <img loading="lazy" src="public/build/img/imagen8.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen3.jpg" />
+            <img loading="lazy" src="public/build/img/imagen3.jpg" />
           </div>
 
           <div class="swiper-slide">
-            <img src="public/build/img/imagen10.jpg" />
+            <img loading="lazy" src="public/build/img/imagen10.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen4.jpg" />
+            <img loading="lazy" src="public/build/img/imagen4.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen1.jpg" />
+            <img loading="lazy" src="public/build/img/imagen1.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen2.jpg" />
+            <img loading="lazy" src="public/build/img/imagen2.jpg" />
           </div>
           <div class="swiper-slide">
-            <img src="public/build/img/imagen9.jpg" />
+            <img loading="lazy" src="public/build/img/imagen9.jpg" />
           </div>
         </div>
       </div>
+      </section>
     </main>
     <script src="public/build/js/scrollreveal.js"></script>
     <script src="public/build/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          loop: true,
-          spaceBetween: 10,
-          slidesPerView: 4,
-          freeMode: true,
-          watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-          loop: true,
-          spaceBetween: 10,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          thumbs: {
-            swiper: swiper,
-          },
-        });
-      </script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
   </body>
 </html>

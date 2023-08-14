@@ -3,14 +3,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function eventListener() {
+  // navegacion fija
   function navegacionFija() {
-    const e = document.querySelector("a");
-    new IntersectionObserver(function (t) {
-      t[0].isIntersecting
-        ? e.classList.remove("active")
-        : e.classList.add("active");
-    }).observe(document.querySelector(".header"));
+    const header = document.querySelector(".header");
+    video = document.querySelector(".video")
+    new IntersectionObserver(function (entries) {
+      const isHeaderVisible = entries[0].isIntersecting;
+      isHeaderVisible ? header.classList.remove("fijo") : header.classList.add("fijo");
+    }).observe(video);
   }
+  navegacionFija();
+
+  // scroll efect
   function scrollNav() {
     document.querySelectorAll(".navegacion-principal a").forEach(function (e) {
       e.addEventListener("click", function (e) {
@@ -22,8 +26,10 @@ function eventListener() {
     });
   }
   scrollNav();
-  navegacionFija();
 
+
+
+  //animation divs
   window.sr = ScrollReveal();
   sr.reveal(".header", {
     duration: 1500,
@@ -58,6 +64,37 @@ function eventListener() {
     origin: "left",
     distance: "-100px",
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".info", {
+    duration: 3000,
+    origin: "right",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".dias", {
+    duration: 3000,
+    origin: "left",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".texto-fecha", {
+    duration: 3000,
+    origin: "left",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal("#swip-ani", {
+    duration: 3000,
+    origin: "left",
+    distance: "-100px",
+  });
+
+
+  //contador de dias
 
   const getRemainTime = (deadline) => {
     let now = new Date(),
@@ -100,27 +137,4 @@ function eventListener() {
 
   contDown("Sun Nov 5 2023 15:00:00 GMT-0600");
 
-
-  window.sr = ScrollReveal();
-  sr.reveal(".dias", {
-    duration: 3000,
-    origin: "left",
-    distance: "-100px",
-  });
-
-  window.sr = ScrollReveal();
-  sr.reveal(".texto-fecha", {
-    duration: 3000,
-    origin: "left",
-    distance: "-100px",
-  });
-
-  window.sr = ScrollReveal();
-  sr.reveal("#swip-ani", {
-    duration: 3000,
-    origin: "left",
-    distance: "-100px",
-  });
-
-  
 }
