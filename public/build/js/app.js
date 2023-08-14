@@ -6,11 +6,18 @@ function eventListener() {
   // navegacion fija
   function navegacionFija() {
     const header = document.querySelector(".header");
-    video = document.querySelector(".video")
-    new IntersectionObserver(function (entries) {
+    video = document.querySelector(".imagen-portada");
+
+    //Registrar el Intersection Observer
+    const observer = new IntersectionObserver(function (entries) {
       const isHeaderVisible = entries[0].isIntersecting;
-      isHeaderVisible ? header.classList.remove("fijo") : header.classList.add("fijo");
-    }).observe(video);
+      isHeaderVisible
+        ? header.classList.remove("fijo")
+        : header.classList.add("fijo");
+    });
+
+    //Elento a Observar
+    observer.observe(video);
   }
   navegacionFija();
 
@@ -26,8 +33,6 @@ function eventListener() {
     });
   }
   scrollNav();
-
-
 
   //animation divs
   window.sr = ScrollReveal();
@@ -93,7 +98,6 @@ function eventListener() {
     distance: "-100px",
   });
 
-
   //contador de dias
 
   const getRemainTime = (deadline) => {
@@ -136,5 +140,4 @@ function eventListener() {
   };
 
   contDown("Sun Nov 5 2023 15:00:00 GMT-0600");
-
 }
