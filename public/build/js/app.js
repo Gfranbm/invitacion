@@ -143,10 +143,16 @@ function eventListener() {
 
   // confirmacion por wa
 
-  const confirmWa = (phone,message) =>{
-    enlace = document.getElementById("wa");
+  const confirmWaNovio = (phone,message) =>{
+    enlace = document.getElementById("wa-novio");
     enlace.href = `https://wa.me/${phone}?text=${message}`
   }
 
-  confirmWa(54424703, "Hola, quiero confirmar mi asistencia a tu boda")
+  const confirmWaNovia = (phone,message) =>{
+    enlace = document.getElementById("wa-novia");
+    enlace.href = `https://wa.me/${phone}?text=${message}`
+  }
+
+  confirmWaNovio(31555037, "Hola, Gracias por la invitación, confirmo mi asistencia")
+  confirmWaNovia(59814472, "Hola, Gracias por la invitación, confirmo mi asistencia")
 }
