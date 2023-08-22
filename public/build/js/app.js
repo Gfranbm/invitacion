@@ -140,4 +140,13 @@ function eventListener() {
   };
 
   contDown("Sun Nov 5 2023 14:30:00 GMT-0600");
+
+  // confirmacion por wa
+
+  const confirmWa = (phone,message) =>{
+    enlace = document.getElementById("wa");
+    enlace.href = `https://wa.me/${phone}?text=${message}`
+  }
+
+  confirmWa(54424703, "Hola, quiero confirmar mi asistencia a tu boda")
 }

@@ -169,8 +169,11 @@ body {
   background-size: contain;
 }
 body,
-p {
+p,
+h2,
+h3 {
   margin: 0;
+  font-family: Cormorant Garamond, serif;
 }
 p {
   color: #000;
@@ -187,7 +190,6 @@ img {
 h1,
 h2,
 h3 {
-  font-family: Cormorant Garamond, serif;
   text-align: center;
   margin: 0;
 }
@@ -217,7 +219,7 @@ h3 {
 
 /* Inicio header */
 
-.header{
+.header {
   background-image: url("/public/build/img/fondo4.jpg");
   background-repeat: repeat;
   background-size: contain;
@@ -230,13 +232,12 @@ h3 {
   position: relative;
 }
 
-.header.fijo{
+.header.fijo {
   position: fixed;
   transition: all 3s ease;
   top: 0;
   z-index: 2;
 }
-
 
 @media (min-width: 480px) {
   .header .contenido-header {
@@ -258,11 +259,11 @@ h3 {
 .header h1 {
   margin: 0;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 55px;
   text-shadow: 0 0 0.1em var(--dorado-obscuro), 0 0 0.2em var(--dorado-obscuro),
-		0 0 0.2em var(--dorado-obscuro);
-    -webkit-text-stroke: 0.2px rgb(243, 239, 239);
+    0 0 0.2em var(--dorado-obscuro);
+  -webkit-text-stroke: 0.2px rgb(243, 239, 239);
 }
 @media (min-width: 768px) {
   .header h1 {
@@ -283,7 +284,7 @@ h3 {
 .navegacion-principal a {
   color: var(--dorado);
   font-size: 2rem;
-  font-family: 800;
+  font-weight: 800;
 }
 .navegacion-principal a:hover {
   color: #fef46d;
@@ -328,38 +329,36 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding: 1rem;
   text-transform: uppercase;
 }
 
-.fondo-info{
+.fondo-info {
   position: relative;
-  overflow: clip;
-
+  overflow: hidden;
 }
 
 .info img {
   width: 100%;
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
-.info p{
+.info p {
   text-transform: none;
 }
 
-.nombres{
+.nombres {
   position: absolute;
 }
 
-
-.content-nombres{
+.content-nombres {
   font-size: 40px;
   letter-spacing: 0;
   color: var(--verde);
   line-height: 1;
 }
 
-.content-nombres span{
+.content-nombres span {
   display: block;
   font-size: 25px;
   margin: 0;
@@ -406,7 +405,7 @@ h3 {
 
 /* contador */
 .dias-juntos {
-  margin: 5rem 0;
+  margin: 1.5rem 0;
 }
 
 #clock {
@@ -414,7 +413,7 @@ h3 {
   justify-content: center;
   gap: 0.5rem;
   font-size: 4rem;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .fecha {
@@ -505,3 +504,94 @@ h3 {
 }
 
 /* Fin slider */
+
+/* Inicio Honores */
+
+.honores {
+  text-align: center;
+  color: var(--verde);
+}
+
+.honores p {
+  color: var(--verde);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.fondo-honores {
+  height: 100%;
+  width: 100%;
+  background-image: url("/public/build/img/hoja7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 11rem 0;
+  text-transform: uppercase;
+}
+
+.cont-honores {
+  text-align: center;
+}
+
+.separacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 0rem;
+  border: 1px solid var(--verde);
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+span.andper {
+  display: block;
+  line-height: 0.7;
+  font-weight: 700;
+}
+
+.social {
+  width: 100%;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-icon {
+  width: 6rem;
+  height: 6rem;
+  font-size: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e9e5e5;
+}
+
+.social-icon.calendar{
+  background-color: rgb(54, 214, 129);
+}
+
+.social-icon.waze{
+  background-color: #4444bf;
+}
+/* 
+svg.svg-inline--fa.fa-calendar-check{
+}
+
+svg.svg-inline--fa.fa-waze {
+} */
+/* Fin honres */
+
+#wa{
+  background-color: aqua;
+  width: 6rem;
+  height: 6rem;
+  font-size: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e9e5e5;
+}
