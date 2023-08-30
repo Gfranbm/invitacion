@@ -164,7 +164,7 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.8;
-  background-image: url("/public/build/img/fondo.jpg");
+  background-image: url("https://invitacion-img.s3.amazonaws.com/fondo.jpg");
   background-repeat: repeat;
   background-size: contain;
 }
@@ -221,7 +221,7 @@ h3 {
 /* Inicio header */
 
 .header {
-  background-image: url("/public/build/img/fondo4.jpg");
+  background-image: url("https://invitacion-img.s3.amazonaws.com/fondo4.jpg");
   background-repeat: repeat;
   background-size: contain;
   color: var(--dorado);
@@ -423,7 +423,7 @@ h3 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
-  background-image: url("/public/build/img/fondo5.png");
+  background-image: url("https://invitacion-img.s3.amazonaws.com/fondo5.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -434,7 +434,7 @@ h3 {
   color: #fff;
   font-weight: 900;
   background-color: var(--verde);
-  background-image: url("/public/build/img/fondo4.jpg");
+  background-image: url("https://invitacion-img.s3.amazonaws.com/fondo4.jpg");
   background-repeat: repeat;
   background-size: contain;
   border: 5px;
@@ -521,7 +521,7 @@ h3 {
 .fondo-honores {
   height: 100%;
   width: 100%;
-  background-image: url("/public/build/img/hoja7.png");
+  background-image: url("https://invitacion-img.s3.amazonaws.com/hoja7.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -735,7 +735,7 @@ p.num-invitados {
   margin: 4rem auto 0;
   padding: 5rem 3rem;
   width: 100%;
-  background-image: url("/public/build/img/imagen11.jpg");
+  background-image: url("https://invitacion-img.s3.amazonaws.com/imagen11.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
