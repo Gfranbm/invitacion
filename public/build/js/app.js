@@ -38,7 +38,7 @@ function eventListener() {
   window.sr = ScrollReveal();
   sr.reveal(".header", {
     duration: 3000,
-    origin: "bottom",
+    origin: "left",
     distance: "-100px",
   });
 
@@ -98,6 +98,41 @@ function eventListener() {
     distance: "-100px",
   });
 
+
+  window.sr = ScrollReveal();
+  sr.reveal("#ubicacion", {
+    duration: 3000,
+    origin: "right",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".image-center", {
+    duration: 3000,
+    origin: "left",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".confirmacion", {
+    duration: 3000,
+    origin: "left",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".vestimenta", {
+    duration: 3000,
+    origin: "left",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal("#deseos", {
+    duration: 3000,
+    origin: "right",
+    distance: "-100px",
+  });
   //contador de dias
 
   const getRemainTime = (deadline) => {
