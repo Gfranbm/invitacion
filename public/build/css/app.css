@@ -215,6 +215,7 @@ h3 {
   max-width: 80rem;
   width: 100%;
   margin: 0 auto;
+  padding: 0.5rem;
 }
 
 /* Inicio header */
@@ -569,12 +570,12 @@ span.andper {
   color: #e9e5e5;
 }
 
-.social-icon.calendar{
+.social-icon.calendar {
   background-color: var(--dorado);
   border: 1px solid var(--dorado-obscuro);
 }
 
-.social-icon.waze{
+.social-icon.waze {
   background-color: var(--dorado);
   border: 1px solid var(--dorado-obscuro);
 }
@@ -586,24 +587,24 @@ svg.svg-inline--fa.fa-waze {
 } */
 /* Fin honres */
 
+/*Inicio confirmacion */
 
-/* inicio confirmacion */
-
-.content-confirm{
+.content-confirm {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem 0;
+  padding: 5rem 0;
+  text-transform: uppercase;
 }
 
-.enlaces{
+.enlaces {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-a.wa{
+a.wa {
   background-color: var(--dorado);
   border: 1px solid var(--dorado-obscuro);
   width: 6rem;
@@ -615,3 +616,276 @@ a.wa{
   justify-content: center;
   color: #e9e5e5;
 }
+
+.cont-num {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 0;
+  font-weight: 500;
+}
+
+.cont-num p,
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.enlaces p,
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Fin confirmacion */
+
+/* Inicio vestimenta */
+
+.vestimenta {
+  padding: 3.5rem 0;
+  text-transform: uppercase;
+}
+
+.cont-suite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+span.icon-suite {
+  background-color: var(--dorado);
+  border: 1px solid var(--dorado-obscuro);
+  width: 6rem;
+  height: 6rem;
+  font-size: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e9e5e5;
+}
+
+p.num-invitados {
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--dorado-obscuro);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+.vestimenta p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.vestimenta h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.etiqueta {
+  color: var(--dorado);
+  font-size: 30px;
+}
+
+.vestimenta span {
+  font-weight: 600;
+}
+
+/* Fin vestimenta */
+
+/* Inicio Hashtag */
+
+.hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+#instagram {
+  height: 5rem;
+  width: 5rem;
+  border: var(--dorado-obscuro);
+  color: var(--dorado);
+}
+
+.hashtag h2 {
+  color: var(--dorado);
+}
+
+.hashtag p {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Fin Hashtag */
+
+/* Inicio Formulario */
+
+.container-form {
+  display: block;
+  position: relative;
+  z-index: 0;
+  margin: 4rem auto 0;
+  padding: 5rem 3rem;
+  width: 100%;
+  background-image: url("/public/build/img/imagen11.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+} 
+
+.formulario {
+  background: rgba(5, 65, 59, 0.55);
+  box-shadow: 0 8px 32px 0 var(--verde);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  padding: 2rem;
+  color: white;
+}
+
+
+.formulario legend {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.formulario label {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+.formulario input:not([type="submit"]),
+.formulario select,
+.formulario textarea {
+  color: #000;
+  font-size: 1.15rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.80);
+  letter-spacing: 1px;
+}
+.formulario textarea {
+  height: 20rem;
+}
+
+.formulario button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 2rem;
+  letter-spacing: 4px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--dorado-obscuro);
+  width: 100%;
+}
+
+.formulario button:hover {
+  background: var(--dorado);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px var(--dorado),
+              0 0 25px var(--dorado),
+              0 0 50px var(--dorado),
+              0 0 100px var(--dorado);
+}
+
+.formulario button span {
+  position: absolute;
+  display: block;
+}
+
+.formulario button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--verde));
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.formulario button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--verde));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--verde));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.formulario button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--verde));
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+/* Fin Formulario */
