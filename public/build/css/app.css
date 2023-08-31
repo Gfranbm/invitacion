@@ -167,7 +167,7 @@ body {
   background-image: url("https://invitacion-img.s3.amazonaws.com/fondo.jpg");
   background-repeat: repeat;
   background-size: contain;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 body,
 p,
@@ -212,7 +212,9 @@ h3 {
   background-color: rgb(197, 156, 72);
 }
 
-
+section{
+  overflow: hidden;
+}
 
 .main {
   max-width: 80rem;
@@ -234,6 +236,7 @@ h3 {
   box-shadow: 0 0.3rem 0.4rem #444;
   transition: all 1s ease-out;
   position: relative;
+  overflow: hidden;
 }
 
 .header.fijo {
@@ -241,6 +244,7 @@ h3 {
   transition: all 1s ease-in;
   top: 0;
   z-index: 2;
+  overflow: hidden;
 }
 
 @media (min-width: 480px) {
@@ -250,6 +254,7 @@ h3 {
     justify-content: space-between;
     padding: 2.5rem 0;
     color: var(--dorado);
+    overflow: hidden;
   }
 
   .header-fijo .contenido-header {
