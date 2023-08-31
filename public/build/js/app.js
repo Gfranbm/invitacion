@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   eventListener();
 });
 
+function eventListener() {
   // navegacion fija
   function navegacionFija() {
     const header = document.querySelector(".header");
@@ -19,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(video);
   }
   navegacionFija();
-
-function eventListener() {
 
   // scroll efect
   function scrollNav() {
