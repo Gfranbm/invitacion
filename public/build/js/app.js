@@ -3,24 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function eventListener() {
-  // navegacion fija
-  function navegacionFija() {
-    const header = document.querySelector(".header");
-    video = document.querySelector(".imagen-portada");
-
-    //Registrar el Intersection Observer
-    const observer = new IntersectionObserver(function (entries) {
-      const isHeaderVisible = entries[0].isIntersecting;
-      isHeaderVisible
-        ? header.classList.remove("fijo")
-        : header.classList.add("fijo");
-    });
-
-    //Elento a Observar
-    observer.observe(video);
-  }
-  navegacionFija();
-
   // scroll efect
   function scrollNav() {
     document.querySelectorAll(".navegacion-principal a").forEach(function (e) {

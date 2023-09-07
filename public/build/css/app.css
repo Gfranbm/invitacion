@@ -167,7 +167,6 @@ body {
   background-image: url("https://invitacion-img.s3.amazonaws.com/fondo.jpg");
   background-repeat: repeat;
   background-size: contain;
-  overflow: hidden;
 }
 body,
 p,
@@ -212,10 +211,6 @@ h3 {
   background-color: rgb(197, 156, 72);
 }
 
-section{
-  overflow: hidden;
-}
-
 .main {
   max-width: 80rem;
   width: 100%;
@@ -236,28 +231,11 @@ section{
   box-shadow: 0 0.3rem 0.4rem #444;
   transition: all 1s ease-out;
   position: relative;
-  overflow: hidden;
 }
 
-.header.fijo {
-  position: fixed;
-  transition: all 1s ease-in;
-  top: 0;
-  z-index: 2;
-  overflow: hidden;
-}
 
 @media (min-width: 480px) {
   .header .contenido-header {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5rem 0;
-    color: var(--dorado);
-    overflow: hidden;
-  }
-
-  .header-fijo .contenido-header {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -276,10 +254,6 @@ section{
 }
 @media (min-width: 768px) {
   .header h1 {
-    margin-bottom: 0;
-  }
-
-  .header-fijo h1 {
     margin-bottom: 0;
   }
 }
@@ -302,7 +276,6 @@ section{
 .imagen-portada {
   max-height: 50rem;
   height: 100%;
-  overflow: hidden;
   position: relative;
 }
 
@@ -310,7 +283,6 @@ section{
   .imagen-portada {
     max-height: 25rem;
     height: 100%;
-    overflow: hidden;
     position: relative;
   }
 }
@@ -319,7 +291,6 @@ section{
   .imagen-portada {
     max-height: 60rem;
     height: 100%;
-    overflow: hidden;
     position: relative;
   }
 
@@ -344,7 +315,6 @@ section{
 
 .fondo-info {
   position: relative;
-  overflow: hidden;
 }
 
 .info img {
@@ -361,7 +331,7 @@ section{
 }
 
 .content-nombres {
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 0;
   color: var(--verde);
   line-height: 1;
@@ -369,7 +339,7 @@ section{
 
 .content-nombres span {
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   color: var(--verde);
@@ -383,7 +353,6 @@ section{
   font-size: 35px;
   color: var(--verde);
   font-weight: 600;
-  overflow: hidden;
 }
 
 .andperson::before,
