@@ -17,7 +17,7 @@ function eventListener() {
   scrollNav();
 
   //animation divs
-  window.sr = ScrollReveal();
+  window.sr = ScrollReveal()
   sr.reveal(".header", {
     duration: 3000,
     origin: "top",
