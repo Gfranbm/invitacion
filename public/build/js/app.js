@@ -27,14 +27,14 @@ function eventListener() {
   window.sr = ScrollReveal();
   sr.reveal(".pic", {
     duration: 3000,
-    origin: "top",
+    origin: "bottom",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".hoja_1", {
     duration: 3000,
-    origin: "bottom",
+    origin: "top",
     distance: "-100px",
   });
 
@@ -69,7 +69,7 @@ function eventListener() {
   window.sr = ScrollReveal();
   sr.reveal(".texto-fecha", {
     duration: 3000,
-    origin: "top",
+    origin: "bottom",
     distance: "-100px",
   });
 
@@ -98,7 +98,7 @@ function eventListener() {
   window.sr = ScrollReveal();
   sr.reveal(".confirmacion", {
     duration: 3000,
-    origin: "top",
+    origin: "bottom",
     distance: "-100px",
   });
 
