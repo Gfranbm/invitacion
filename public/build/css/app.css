@@ -171,6 +171,7 @@ body {
   max-width: 100rem;
   width: 100%;
   margin: 0 auto;
+  color: var(--verde);
 }
 p,
 h2,
@@ -178,7 +179,7 @@ h3 {
   font-family: Cormorant Garamond, serif;
 }
 p {
-  color: #000;
+  color: var(--verde);
   font-size: 2rem;
 }
 a {
@@ -413,6 +414,7 @@ h3 {
   background-repeat: repeat;
   background-size: contain;
   border: 5px;
+  margin: 0;
 }
 
 /* inicio slider */
@@ -576,14 +578,17 @@ svg.svg-inline--fa.fa-waze {
   box-shadow: 0 8px 32px 0 rgba(57, 64, 159, 0.25);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 5px );
+  color: var(--verde);
 }
 
 .content-confirm {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5rem 0;
+  padding: 1rem 0;
   text-transform: uppercase;
+  color: var(--verde);
 }
 
 .enlaces {
@@ -591,6 +596,10 @@ svg.svg-inline--fa.fa-waze {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.enlaces p{
+   color: var(--verde);
 }
 
 a.wa {
@@ -610,7 +619,7 @@ a.wa {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   font-weight: 500;
 }
 

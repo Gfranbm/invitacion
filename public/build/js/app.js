@@ -170,6 +170,6 @@ function eventListener() {
     enlace.href = `https://wa.me/${phone}?text=${message}`
   }
 
-  confirmWaNovio(31555037, "Hola, Gracias por la invitación, confirmo mi asistencia")
-  confirmWaNovia(59814472, "Hola, Gracias por la invitación, confirmo mi asistencia")
+  confirmWaNovio(44969627, "Hola, Gracias por la invitación, confirmo mi asistencia")
+  confirmWaNovia(44969627, "Hola, Gracias por la invitación, confirmo mi asistencia")
 }
