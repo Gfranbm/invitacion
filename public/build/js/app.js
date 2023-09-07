@@ -20,63 +20,63 @@ function eventListener() {
   window.sr = ScrollReveal();
   sr.reveal(".header", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".pic", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".hoja_1", {
     duration: 3000,
-    origin: "right",
+    origin: "bottom",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".contenido_informacion", {
     duration: 3000,
-    origin: "right",
+    origin: "bottom",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".hoja_bottom", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".info", {
     duration: 3000,
-    origin: "right",
+    origin: "bottom",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".dias", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".texto-fecha", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal("#swip-ani", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
@@ -84,35 +84,35 @@ function eventListener() {
   window.sr = ScrollReveal();
   sr.reveal("#ubicacion", {
     duration: 3000,
-    origin: "right",
+    origin: "bottom",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".image-center", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".confirmacion", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".vestimenta", {
     duration: 3000,
-    origin: "left",
+    origin: "top",
     distance: "-100px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal("#deseos", {
     duration: 3000,
-    origin: "right",
+    origin: "bottom",
     distance: "-100px",
   });
   //contador de dias

@@ -168,12 +168,13 @@ body {
   background-repeat: repeat;
   background-size: contain;
   overflow-x: hidden;
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
 }
-body,
 p,
 h2,
 h3 {
-  margin: 0;
   font-family: Cormorant Garamond, serif;
 }
 p {
@@ -212,12 +213,6 @@ h3 {
   background-color: rgb(197, 156, 72);
 }
 
-.main {
-  max-width: 80rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0.5rem;
-}
 
 /* Inicio header */
 
@@ -312,14 +307,16 @@ h3 {
   align-items: center;
   padding: 1rem;
   text-transform: uppercase;
+  max-width: 100%;
 }
 
-.fondo-info {
-  position: relative;
+.fondo-info{
+  overflow-x: hidden;
 }
+
 
 .info img {
-  width: 100%;
+  max-width: 100%;
   transform: scale(1.4);
 }
 
