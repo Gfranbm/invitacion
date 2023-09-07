@@ -167,6 +167,7 @@ body {
   background-image: url("https://invitacion-img.s3.amazonaws.com/fondo.jpg");
   background-repeat: repeat;
   background-size: contain;
+  overflow-x: hidden;
 }
 body,
 p,
