@@ -309,10 +309,14 @@ h3 {
   padding: 1rem;
   text-transform: uppercase;
   max-width: 100%;
+  position: relative;
 }
 
 .fondo-info{
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -321,12 +325,14 @@ h3 {
   transform: scale(1.4);
 }
 
-.info p {
+p.dia-llego {
   text-transform: none;
+  font-size: 25px;
 }
 
 .nombres {
   position: absolute;
+  top: 41%;
 }
 
 .content-nombres {
@@ -485,22 +491,21 @@ h3 {
 
 /* Inicio Honores */
 
-.shadow{
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-}
-
 .honores {
   text-align: center;
   color: var(--verde);
+  font-weight: 700;
 }
 
 .honores p {
   color: var(--verde);
-  font-weight: 500;
   text-transform: uppercase;
 }
+
+.nombres-honores h3{
+  font-size: 18px;
+}
+
 .fondo-honores {
   height: 100%;
   width: 100%;
@@ -514,6 +519,43 @@ h3 {
 
 .cont-honores {
   text-align: center;
+  font-weight: 700;
+}
+
+.ceremonia{
+  font-size: 21px;
+}
+
+.ceremonia h2{
+  line-height: 1.3;
+}
+
+
+.fecha-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 25px;
+  color: var(--dorado);
+  font-weight: 600;
+  padding: 2rem 0;
+  text-transform: uppercase;
+}
+
+.fecha-titulo::before,
+.fecha-titulo::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 1px;
+  background-color: var(--verde);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+span.content-titulo {
+  line-height: 1.3;
 }
 
 .separacion {
@@ -533,13 +575,19 @@ span.andper {
   font-weight: 700;
 }
 
+
+
 .social {
   width: 100%;
   padding: 1rem;
-  margin: 1.5rem 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.social > p{
+  font-size: 15px;
 }
 
 .social-icon {
@@ -562,12 +610,32 @@ span.andper {
   background-color: var(--dorado);
   border: 1px solid var(--dorado-obscuro);
 }
-/* 
-svg.svg-inline--fa.fa-calendar-check{
+
+.direccion h2{
+  text-transform: uppercase;
 }
 
-svg.svg-inline--fa.fa-waze {
-} */
+.direccion p{
+  font-size: 15px;
+}
+
+.direccion-rec{
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.direccion-rec h2{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.direccion-rec p{
+  font-size: 15px;
+  line-height: 1;
+}
+
 /* Fin honres */
 
 /*Inicio confirmacion */
@@ -575,10 +643,6 @@ svg.svg-inline--fa.fa-waze {
 .confirmacion{
   margin: 3.5rem 0;
   text-transform: uppercase;
-  box-shadow: 0 8px 32px 0 rgba(57, 64, 159, 0.25);
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 5px );
-  color: var(--verde);
 }
 
 .content-confirm {
@@ -631,8 +695,9 @@ h3 {
 
 .enlaces p,
 h3 {
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 /* Fin confirmacion */
@@ -642,9 +707,6 @@ h3 {
 .vestimenta {
   margin: 3.5rem 0;
   text-transform: uppercase;
-  box-shadow: 0 8px 32px 0 rgba(57, 64, 159, 0.37);
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 5px );
 }
 
 .cont-suite {
@@ -695,6 +757,10 @@ p.num-invitados {
 
 .vestimenta span {
   font-weight: 600;
+}
+
+.notas{
+  margin-top: 3rem;
 }
 
 /* Fin vestimenta */
