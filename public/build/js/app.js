@@ -17,7 +17,7 @@ function eventListener() {
   scrollNav();
 
   //animation divs
-  window.sr = ScrollReveal()
+  window.sr = ScrollReveal();
   sr.reveal(".header", {
     duration: 3000,
     origin: "top",
@@ -80,7 +80,6 @@ function eventListener() {
     distance: "-100px",
   });
 
-
   window.sr = ScrollReveal();
   sr.reveal("#ubicacion", {
     duration: 3000,
@@ -126,7 +125,7 @@ function eventListener() {
   window.sr = ScrollReveal();
   sr.reveal(".titulo-saludo", {
     duration: 1500,
-    scale: 0.85
+    scale: 0.85,
   });
 
   window.sr = ScrollReveal();
@@ -180,16 +179,73 @@ function eventListener() {
 
   // confirmacion por wa
 
-  const confirmWaNovio = (phone,message) =>{
+  const confirmWaNovio = (phone, message) => {
     enlace = document.getElementById("wa-novio");
-    enlace.href = `https://wa.me/${phone}?text=${message}`
-  }
+    enlace.href = `https://wa.me/${phone}?text=${message}`;
+  };
 
-  const confirmWaNovia = (phone,message) =>{
+  const confirmWaNovia = (phone, message) => {
     enlace = document.getElementById("wa-novia");
-    enlace.href = `https://wa.me/${phone}?text=${message}`
-  }
+    enlace.href = `https://wa.me/${phone}?text=${message}`;
+  };
 
-  confirmWaNovio(44969627, "Hola, Gracias por la invitación, confirmo mi asistencia")
-  confirmWaNovia(44969627, "Hola, Gracias por la invitación, confirmo mi asistencia")
+  confirmWaNovio(
+    44969627,
+    "Hola, Gracias por la invitación, confirmo mi asistencia"
+  );
+  confirmWaNovia(
+    44969627,
+    "Hola, Gracias por la invitación, confirmo mi asistencia"
+  );
+
+  // Inicializar la API de Google Calendar
+  gapi.load("client:auth2", function () {
+    gapi.client
+      .init({
+        apiKey: "TU_API_KEY",
+        clientId: "TU_CLIENT_ID",
+        discoveryDocs: [
+          "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
+        ],
+        scope: "https://www.googleapis.com/auth/calendar.events",
+      })
+      .then(function () {
+        // Escucha el clic en el botón "Agregar Evento"
+        document
+          .getElementById("agregar-evento")
+          .addEventListener("click", function () {
+            agregarEvento();
+          });
+      });
+  });
+
+  // Función para agregar un evento a Google Calendar
+  function agregarEvento() {
+    gapi.auth2
+      .getAuthInstance()
+      .signIn()
+      .then(function () {
+        var event = {
+          summary: "Título del Evento",
+          description: "Descripción del Evento",
+          start: {
+            dateTime: "2023-08-23T10:00:00",
+            timeZone: "America/New_York",
+          },
+          end: {
+            dateTime: "2023-08-23T12:00:00",
+            timeZone: "America/New_York",
+          },
+        };
+
+        var request = gapi.client.calendar.events.insert({
+          calendarId: "primary",
+          resource: event,
+        });
+
+        request.execute(function (event) {
+          console.log("Evento agregado: " + event.htmlLink);
+        });
+      });
+  }
 }
