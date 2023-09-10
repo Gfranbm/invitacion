@@ -115,6 +115,26 @@ function eventListener() {
     origin: "bottom",
     distance: "-100px",
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".img-saludos", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-100px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".titulo-saludo", {
+    duration: 1500,
+    scale: 0.85
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".texto.saludo", {
+    duration: 1500,
+    origin: "bottom",
+    distance: "-100px",
+  });
   //contador de dias
 
   const getRemainTime = (deadline) => {

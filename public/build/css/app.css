@@ -177,6 +177,7 @@ p,
 h2,
 h3 {
   font-family: Cormorant Garamond, serif;
+  margin: 0;
 }
 p {
   color: var(--verde);
@@ -776,6 +777,7 @@ p.num-invitados {
   align-items: center;
   flex-direction: column;
   text-transform: uppercase;
+  padding: 3rem 1rem;
 }
 
 #instagram {
@@ -795,6 +797,61 @@ p.num-invitados {
 }
 
 /* Fin Hashtag */
+
+
+/* Inicio Regalos */
+
+.regalos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.icon-gift{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-gift{
+  font-size: 45px;
+  color: var(--dorado);
+}
+
+.regalos p{
+  text-align: center;
+}
+
+.regalo-lugar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3rem 0;
+}
+
+.lugar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+
+.icon-regalo{
+  font-size: 35px;
+  color: var(--dorado-obscuro);
+}
+
+.texto-regalo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Fin regalos */
 
 /* Inicio Formulario */
 
@@ -960,3 +1017,29 @@ p.num-invitados {
 
 /* Fin Formulario */
 
+/* Inicio Saludos */
+.saludos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.saludos h2{
+  color: var(--dorado);
+  font-size: 45px;
+}
+
+.saludos p{
+  text-align: center;
+}
+
+.footer{
+  text-align: center;
+  background-color: var(--dorado-obscuro);
+}
+.footer p{
+  color: #e9e5e5;
+}
+/* Fin Saludos */
