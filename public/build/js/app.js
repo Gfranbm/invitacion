@@ -191,11 +191,11 @@ function eventListener() {
 
   confirmWaNovio(
     44969627,
-    "Hola, Gracias por la invitación a su boda U+1F470 U+200D U+1F692, me gustaría confirmar mi asistencia, <Tu nombre>" 
+    "Hola, Gracias por la invitación a su boda 🤵🏻👰🏻‍♀, me gustaría confirmar mi asistencia, <Tu nombre>" 
   );
   confirmWaNovia(
     44969627,
-    "Hola, Gracias por la invitación a su boda U+1F470 U+200D U+1F692, me gustaría confirmar mi asistencia, <Tu nombre>"
+    "Hola, Gracias por la invitación a su boda 🤵🏻👰🏻‍♀, me gustaría confirmar mi asistencia, <Tu nombre>"
   );
 
   // Inicializar la API de Google Calendar
