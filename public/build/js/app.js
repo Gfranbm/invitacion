@@ -237,4 +237,46 @@ function eventListener() {
     "Hola, Gracias por la invitación a su boda 🤵🏻👰🏻‍♀, me gustaría confirmar mi asistencia, <Tu nombre>"
   );
 
+   // Inicializar la API de Google Calendar
+   gapi.load('client:auth2', function() {
+    gapi.client.init({
+        apiKey: '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',
+        clientId: '814437859642-g5t7kms7pm922ppm3vmdbiqv6tuubn3h.apps.googleusercontent.com',
+        discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+        scope: "https://www.googleapis.com/auth/calendar.events"
+    }).then(function() {
+        // Escucha el clic en el botón "Agregar Evento"
+        document.getElementById('agregar-evento').addEventListener('click', function() {
+            agregarEvento();
+        });
+    });
+});
+
+// Función para agregar un evento a Google Calendar
+function agregarEvento() {
+    gapi.auth2.getAuthInstance().signIn().then(function() {
+        var event = {
+            'summary': 'Título del Evento',
+            'description': 'Descripción del Evento',
+            'start': {
+                'dateTime': '2023-08-23T10:00:00',
+                'timeZone': 'America/New_York'
+            },
+            'end': {
+                'dateTime': '2023-08-23T12:00:00',
+                'timeZone': 'America/New_York'
+            }
+        };
+
+        var request = gapi.client.calendar.events.insert({
+            'calendarId': 'primary',
+            'resource': event
+        });
+
+        request.execute(function(event) {
+            console.log('Evento agregado: ' + event.htmlLink);
+        });
+    });
+}
+
 }
