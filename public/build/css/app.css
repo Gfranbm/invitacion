@@ -314,12 +314,10 @@ h3 {
   padding: 1rem;
   text-transform: uppercase;
   max-width: 100%;
-  position: relative;
 }
 
 .fondo-info{
   overflow: hidden;
-
   display: flex;
   justify-content: center;
 }
@@ -345,7 +343,7 @@ span.si{
 
 .nombres {
   position: absolute;
-  top: 41%;
+  top: 35%;
 }
 
 .content-nombres {
@@ -397,6 +395,10 @@ span.si{
   font-weight: 600;
   letter-spacing: 1.5px;
   font-size: 30px;
+}
+
+.faltan{
+  font-size: 20px;
 }
 
 /* contador */
@@ -657,6 +659,13 @@ span.andper {
   text-transform: uppercase;
 }
 
+.maxima{
+  color: var(--dorado);
+  border-bottom: 2px solid var(--dorado-obscuro);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .content-confirm {
   display: flex;
   flex-direction: column;
@@ -673,10 +682,13 @@ span.andper {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  gap: 1rem;
 }
 
 .enlaces p{
    color: var(--verde);
+   font-weight: 700!important;
+   font-size: 15px!important;
 }
 
 a.wa {
@@ -918,10 +930,10 @@ svg.svg-inline--fa.fa-envelope{
 }
 
 h2.gracias{
-  text-transform: uppercase;
-  font-family: 'Courgette', cursive;
+  /* font-family: 'Courgette', cursive; */
+  font-family: personalizado;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 45px;
   color: var(--dorado);
 }
 /* Fin regalos */
