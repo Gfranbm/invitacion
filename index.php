@@ -403,15 +403,15 @@
         <img src="https://invitacion-img.s3.amazonaws.com/liston.png" alt="" />
       </div>
       <div class="container-form" id="deseos">
-        <form class="formulario" action="send-mail.php">
+        <form class="formulario" action="send-mail.php" method="POST">
           <fieldset>
             <legend>Envía tus deseos</legend>
 
             <label for="titulo">Nombre</label>
-            <input type="text" id="nombre" placeholder="Tu nombre" />
+            <input type="text" id="nombre" placeholder="Tu nombre" name="nombre" />
 
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje"> </textarea>
+            <textarea id="mensaje" name="mensaje"> </textarea>
             <button>
               <span></span>
               <span></span>

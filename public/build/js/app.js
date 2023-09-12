@@ -240,18 +240,10 @@ function eventListener() {
    // Inicializar la API de Google Calendar
    gapi.load('client:auth2', function() {
     gapi.client.init({
-      "client_id": "814437859642-g5t7kms7pm922ppm3vmdbiqv6tuubn3h.apps.googleusercontent.com",
-      "project_id": "calenadar-398801",
-      "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-      "token_uri": "https://oauth2.googleapis.com/token",
-      "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-      "client_secret": "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",
-      "redirect_uris": [
-          "https://nuestrabodaly.netlify.app/events"
-      ],
-      "javascript_origins": [
-          "https://nuestrabodaly.netlify.app"
-      ]
+        apiKey: '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',
+        client_id: '814437859642-g5t7kms7pm922ppm3vmdbiqv6tuubn3h.apps.googleusercontent.com',
+        discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
+        scope: "https://www.googleapis.com/auth/calendar.events"
     }).then(function() {
         // Escucha el clic en el botón "Agregar Evento"
         document.getElementById('agregar-evento').addEventListener('click', function() {
