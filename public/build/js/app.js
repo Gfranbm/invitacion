@@ -21,119 +21,158 @@ function eventListener() {
   sr.reveal(".header", {
     duration: 3000,
     origin: "top",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".pic", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".hoja_1", {
     duration: 3000,
     origin: "top",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".contenido_informacion", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".hoja_bottom", {
     duration: 3000,
     origin: "top",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".info", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".dias", {
     duration: 3000,
     origin: "top",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".texto-fecha", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal("#swip-ani", {
     duration: 3000,
     origin: "top",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal("#ubicacion", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".image-center", {
     duration: 3000,
     origin: "top",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".confirmacion", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".vestimenta", {
     duration: 3000,
     origin: "top",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal("#deseos", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".img-saludos", {
     duration: 3000,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".titulo-saludo", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".regalos-lugar", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".cuenta", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".gracias", {
     duration: 1500,
-    scale: 0.85,
+    origin: "top",
+    distance: "-55px",
   });
 
   window.sr = ScrollReveal();
   sr.reveal(".texto.saludo", {
     duration: 1500,
     origin: "bottom",
-    distance: "-100px",
+    distance: "-55px",
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".textos-bi", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".hashtag", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+
+  
   //contador de dias
 
   const getRemainTime = (deadline) => {
