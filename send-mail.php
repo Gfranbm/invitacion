@@ -1,24 +1,104 @@
 <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $destinatario = "nef.cob@gmail.com";
-    $asunto = $_POST["nombre"];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
-    $mensaje = $_POST["mensaje"];
-    $mensaje = str_replace("\n.", "\n..", $mensaje);
+require './vendor/phpmailer/phpmailer/src/Exception.php';
+require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require './vendor/phpmailer/phpmailer/src/SMTP.php';
 
-    // Cabeceras del correo
-    $headers = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-    $headers .= "From: gfranbm@gmail.com\r\n";
-    $headers .= 'Reply-To: gfranbm@gmail.com' . "\r\n";
-                'X-Mailer: PHP/' . phpversion();
+//Create an instance; passing `true` enables exceptions
+    try {
+      // Contenido del correo
+      $asunto    = $_POST["nombre"];
+      $contenido = $_POST["mensaje"];
+    //   $para      = "nef.cob@gmail.com";
+      $para      = "gbritom1@miumg.edu.gt";
+     
+      // Intancia de PHPMailer
+      $mail = new PHPMailer();
+   
+      // Es necesario para poder usar un servidor SMTP como gmail
+      $mail->isSMTP();
+   
+      // Si estamos en desarrollo podemos utilizar esta propiedad para ver mensajes de error
+      //SMTP::DEBUG_OFF    = off (for production use) 0
+      //SMTP::DEBUG_CLIENT = client messages 1 
+      //SMTP::DEBUG_SERVER = client and server messages 2
+      $mail->SMTPDebug     = 0;
+   
+      //Set the hostname of the mail server
+      $mail->Host          = 'smtp.gmail.com';
+      $mail->Port          = 465; // o 587
+   
+      // Propiedad para establecer la seguridad de encripción de la comunicación
+      $mail->SMTPSecure    = PHPMailer::ENCRYPTION_SMTPS; // tls o ssl para gmail obligado
+   
+      // Para activar la autenticación smtp del servidor
+      $mail->SMTPAuth      = true;
+ 
+      // Credenciales de la cuenta
+      $email              = 'gfranbm@gmail.com';
+      $mail->Username     = $email;
+      $mail->Password     = 'sdwl aqhc ifqi ilcp';
+   
+      // Quien envía este mensaje
+      $mail->setFrom($email, $asunto);
+ 
+      // Destinatario
+      $mail->addAddress($para, 'Leo y Yas');
+   
+      // Asunto del correo
+      $mail->Subject = $asunto;
+ 
+      // Contenido
+      $mail->IsHTML(true);
+      $mail->CharSet = 'UTF-8';
+      $css = '
+            <style>
+                /* Header */
+                .header {
+                    background-color: rgb(5, 65, 59);
+                    color: rgb(195, 157, 70);
+                    text-align: center;
+                    padding: 10px;
+                }
 
-    // Enviar el correo
-    if (mail($destinatario, $asunto, $mensaje, $headers)) {
-        echo "El correo se ha enviado correctamente.";
-    } else {
-        echo "Hubo un problema al enviar el correo.";
+                /* Footer */
+                .footer {
+                    background-color: rgb(5, 65, 59);
+                    color: rgb(195, 157, 70);
+                    text-align: center;
+                    padding: 10px;
+                }
+                .content{
+                    padding: 10px;
+                }
+            </style>';
+        $mail->Body    = sprintf("<!DOCTYPE html>
+        <html>
+        <head>
+            <title>Felicitaciones por tu boda</title>
+            $css
+        </head>
+        <body class='body'>
+            <div class='content'>
+                %s
+            </div>
+            <div class='footer'>
+                <p>© 2023 BodaLeo&Yas</p>
+            </div>
+        </body>
+        </html>
+        ", $contenido);
+   
+      // Texto alternativo
+      $mail->AltBody = '¡Felicitaciones!';
+ 
+      // Enviar el correo
+      $mail->send();
+      echo 'El correo se envió correctamente.';
+    }  catch (Exception $e) {
+        echo "Hubo un error al enviar el correo: {$mail->ErrorInfo}";
     }
-}
-
-?>

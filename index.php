@@ -464,6 +464,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.3.0/jsrsasign-all-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="public/build/js/app.js"></script>
 

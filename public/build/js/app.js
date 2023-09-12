@@ -171,17 +171,10 @@ function eventListener() {
     distance: "-55px",
   });
 
-
-  
   //contador de dias
 
-  const getRemainTime = (deadline) => {
-    let now = new Date(),
-      remainTime = (new Date(deadline) - now + 1000) / 1000,
-      remainSeconds = ("0" + Math.floor(remainTime % 60)).slice(-2),
-      remainMinutes = ("0" + Math.floor((remainTime / 60) % 60)).slice(-2),
-      remainHours = ("0" + Math.floor((remainTime / 3600) % 24)).slice(-2),
-      remainDays = Math.floor(remainTime / (3600 * 24));
+  function getRemainTime(deadline) {
+    let now = new Date(), remainTime = (new Date(deadline) - now + 1000) / 1000, remainSeconds = ("0" + Math.floor(remainTime % 60)).slice(-2), remainMinutes = ("0" + Math.floor((remainTime / 60) % 60)).slice(-2), remainHours = ("0" + Math.floor((remainTime / 3600) % 24)).slice(-2), remainDays = Math.floor(remainTime / (3600 * 24));
 
     return {
       remainTime,
@@ -190,7 +183,7 @@ function eventListener() {
       remainHours,
       remainDays,
     };
-  };
+  }
 
   getRemainTime();
 
@@ -230,53 +223,91 @@ function eventListener() {
 
   confirmWaNovio(
     44969627,
-    "Hola, Gracias por la invitación a su boda 🤵🏻👰🏻‍♀, me gustaría confirmar mi asistencia, <Tu nombre>" 
+    "Hola, Gracias por la invitación a su boda 🤵🏻👰🏻‍♀, me gustaría confirmar mi asistencia, <Tu nombre>"
   );
   confirmWaNovia(
     44969627,
     "Hola, Gracias por la invitación a su boda 🤵🏻👰🏻‍♀, me gustaría confirmar mi asistencia, <Tu nombre>"
   );
 
-   // Inicializar la API de Google Calendar
-   gapi.load('client:auth2', function() {
-    gapi.client.init({
-        apiKey: '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',
-        client_id: '814437859642-g5t7kms7pm922ppm3vmdbiqv6tuubn3h.apps.googleusercontent.com',
-        discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"],
-        scope: "https://www.googleapis.com/auth/calendar.events"
-    }).then(function() {
-        // Escucha el clic en el botón "Agregar Evento"
-        document.getElementById('agregar-evento').addEventListener('click', function() {
-            agregarEvento();
-        });
+
+  const createEvent = async ()=> {
+      // TODO(developer): Set to client ID and API key from the Developer Console
+  const CLIENT_ID = '814437859642-g5t7kms7pm922ppm3vmdbiqv6tuubn3h.apps.googleusercontent.com';
+  const API_KEY = 'AIzaSyC4LBvdliagb5jO6Szy_zpnO7ApR5eugaw';
+
+  // Discovery doc URL for APIs used by the quickstart
+  const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
+
+  // Authorization scopes required by the API; multiple scopes can be
+  // included, separated by spaces.
+  const SCOPES = 'https://www.googleapis.com/auth/calendar';
+
+  let tokenClient;
+  let gapiInited = false;
+  let gisInited = false;
+
+  gapi.load('client', initializeGapiClient);
+
+  async function initializeGapiClient() {
+    await gapi.client.init({
+      apiKey: API_KEY,
+      discoveryDocs: [DISCOVERY_DOC],
     });
-});
-
-// Función para agregar un evento a Google Calendar
-function agregarEvento() {
-    gapi.auth2.getAuthInstance().signIn().then(function() {
-        var event = {
-            'summary': 'Título del Evento',
-            'description': 'Descripción del Evento',
-            'start': {
-                'dateTime': '2023-08-23T10:00:00',
-                'timeZone': 'America/New_York'
-            },
-            'end': {
-                'dateTime': '2023-08-23T12:00:00',
-                'timeZone': 'America/New_York'
-            }
-        };
-
-        var request = gapi.client.calendar.events.insert({
-            'calendarId': 'primary',
-            'resource': event
-        });
-
-        request.execute(function(event) {
-            console.log('Evento agregado: ' + event.htmlLink);
-        });
+    gapiInited = true;
+  }
+  
+  function gisLoaded() {
+    tokenClient = google.accounts.oauth2.initTokenClient({
+      client_id: CLIENT_ID,
+      scope: SCOPES,
+      callback: '', // defined later
     });
+    gisInited = true;
+  }
+
+  const event = {
+    'summary': 'Google I/O 2015',
+    'location': '800 Howard St., San Francisco, CA 94103',
+    'description': 'A chance to hear more about Google\'s developer products.',
+    'start': {
+      'dateTime': '2021-11-05T09:00:00-07:00',
+      'timeZone': 'America/Los_Angeles'
+    },
+    'end': {
+      'dateTime': '2021-11-05T09:00:00-07:00',
+      'timeZone': 'America/Los_Angeles'
+    },
+    'recurrence': [
+      'RRULE:FREQ=DAILY;COUNT=2'
+    ],
+    'attendees': [
+      {'email': 'lpage@example.com'},
+      {'email': 'sbrin@example.com'}
+    ],
+    'reminders': {
+      'useDefault': false,
+      'overrides': [
+        {'method': 'email', 'minutes': 24 * 60},
+        {'method': 'popup', 'minutes': 10}
+      ]
+    }
+  };
+  
+  const request = gapi.client.calendar.events.insert({
+    'calendarId': 'primary',
+    'resource': event
+  });
+  
+  request.execute(function(event) {
+    appendPre('Event created: ' + event.htmlLink);
+  });
+  }
+
+  // Escucha el evento click del botón
+  document.getElementById('agregar-evento').addEventListener('click', function() {
+    createEvent();
+  });
 }
 
-}
+
