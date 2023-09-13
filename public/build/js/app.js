@@ -190,6 +190,13 @@ function eventListener() {
   });
 
   window.sr = ScrollReveal();
+  sr.reveal(".icon-gift", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
   sr.reveal(".regalos-p", {
     duration: 3000,
     origin: "top",

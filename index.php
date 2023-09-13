@@ -303,7 +303,7 @@
           </div>
         </div>
         <div class="notas">
-          <h3>Recomendaciones</h3>
+          <h3>Recuerda</h3>
           <p>El color blanco es exclusivo para la novia</p>
         </div>
       </section>
@@ -367,6 +367,14 @@
             <p>BANRURAL</p>
             <p>Leonel N. Ramírez E.</p>
             <p class="no-cuenta">4420074652</p>
+          </div>
+          <div class="cuenta">
+            <p class="label-t">Banco</p>
+            <p class="label-t">Nombre</p>
+            <p class="label-t">No. cuenta</p>
+            <p>BANRURAL</p>
+            <p>Yasmin Quiñonez Chinchilla</p>
+            <p class="no-cuenta">4759128529</p>
           </div>
         </div>
         <h2 class="gracias">¡Muchas Gracias!</h2>
