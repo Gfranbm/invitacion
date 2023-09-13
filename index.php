@@ -214,12 +214,17 @@
 
             <div class="social"  id="agregar-evento">
               <a
+                href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MG1xc2VzcGltMmY2MG1tMWYyMnNkdDRna2IgNGRlOTU2NGI2MzRkMWYzYzc4MDkwYWZhYjIwODRlZWJmMTM3ZjM5MjIxOTdmNzA1ZmM4NmU2ZjNiYzg2ZmEzZEBn&tmsrc=4de9564b634d1f3c78090afab2084eebf137f3922197f705fc86e6f3bc86fa3d%40group.calendar.google.com"
                 class="social-icon calendar"
                 target="_blank"
               >
                 <i class="fa-regular fa-calendar-check"></i>
               </a>
               <p>Click aqui para agendar fecha en tu calendario</p>
+            </div>
+
+            <div>
+            <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FGuatemala&title=BodaLeo%26Yas&src=NGRlOTU2NGI2MzRkMWYzYzc4MDkwYWZhYjIwODRlZWJmMTM3ZjM5MjIxOTdmNzA1ZmM4NmU2ZjNiYzg2ZmEzZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" style="border:solid 1px #777" width="300" height="300" frameborder="0" scrolling="no"></iframe>
             </div>
 
             <div class="fecha-titulo">
