@@ -48,7 +48,7 @@
         <nav class="navegacion-principal">
           <a href="#inicio">Inicio</a>
           <a href="#galeria">Galería</a>
-          <a href="#ubicacion">Ubicación</a>
+          <a href="#ceremonia">Ubicación</a>
           <a href="#deseos">Deseos</a>
         </nav>
       </div>
@@ -209,7 +209,7 @@
         </div>
         <p>Queremos invitarte a compartir el día de nuestra boda</p>
         <div class="lineas">
-          <div class="ceremonia">
+          <div class="ceremonia" id="ceremonia">
             <div class="liston">
               <img
                 src="https://invitacion-img.s3.amazonaws.com/liston.png"

@@ -32,11 +32,41 @@ function eventListener() {
   });
 
   window.sr = ScrollReveal();
+  sr.reveal(".fondo-honores", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
   sr.reveal(".hoja_1", {
     duration: 3000,
     origin: "top",
     distance: "-55px",
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".faltan", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+
+  window.sr = ScrollReveal();
+  sr.reveal(".date", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".swiper-wrapper", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
 
   window.sr = ScrollReveal();
   sr.reveal(".contenido_informacion", {
@@ -79,6 +109,36 @@ function eventListener() {
     origin: "top",
     distance: "-55px",
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".fecha-titulo", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal("#agregar-evento", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".direccion", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+
+  window.sr = ScrollReveal();
+  sr.reveal(".social", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
 
   window.sr = ScrollReveal();
   sr.reveal("#ubicacion", {
@@ -130,7 +190,36 @@ function eventListener() {
   });
 
   window.sr = ScrollReveal();
-  sr.reveal(".regalos-lugar", {
+  sr.reveal(".regalos-p", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".regalo-lugar", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".lugar", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".efectivo", {
+    duration: 3000,
+    origin: "top",
+    distance: "-55px",
+  });
+  
+
+  window.sr = ScrollReveal();
+  sr.reveal(".transferencia", {
     duration: 3000,
     origin: "top",
     distance: "-55px",
@@ -142,6 +231,30 @@ function eventListener() {
     origin: "bottom",
     distance: "-55px",
   });
+
+
+  window.sr = ScrollReveal();
+  sr.reveal(".trajes", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+
+  window.sr = ScrollReveal();
+  sr.reveal(".ropa", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".enlaces", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
 
   window.sr = ScrollReveal();
   sr.reveal(".gracias", {
@@ -166,6 +279,20 @@ function eventListener() {
 
   window.sr = ScrollReveal();
   sr.reveal(".hashtag", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".liston", {
+    duration: 3000,
+    origin: "bottom",
+    distance: "-55px",
+  });
+
+  window.sr = ScrollReveal();
+  sr.reveal(".alerta", {
     duration: 3000,
     origin: "bottom",
     distance: "-55px",
