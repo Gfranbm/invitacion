@@ -1158,3 +1158,25 @@ h2.titulo-saludo{
   font-size: 50px;
   font-weight: 500;
 }
+
+.alerta{
+  text-align: center;
+  width: 25rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.alerta p{
+  font-weight: 700;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.alerta.error {
+  background-color: #c52b2b;
+}
+.alerta.exito {
+  background-color: #71b100;
+}

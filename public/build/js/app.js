@@ -234,5 +234,4 @@ function eventListener() {
     44969627,
     "Hola, Gracias por la invitación a su boda 🤵🏻👰🏻‍♀, me gustaría confirmar mi asistencia, <Tu nombre>"
   );
-
 }

@@ -1,3 +1,13 @@
+<?php
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            $message = $_GET['message'];
+            if ($message == 1) {
+                $mensaje = '<div class="alerta exito"><p>Mensaje enviado correctamente</p></div>';
+            } elseif ($message == 2) {
+                $mensaje = '<div class="alerta error"><p>Error al enviar el mensaje</p></div>';
+            }
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -403,6 +413,9 @@
       <div class="liston">
         <img src="https://invitacion-img.s3.amazonaws.com/liston.png" alt="" />
       </div>
+      <?php
+        echo $mensaje;
+      ?>
       <div class="container-form" id="deseos">
         <form class="formulario" action="send-mail.php" method="POST">
           <fieldset>

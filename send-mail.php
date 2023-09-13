@@ -14,7 +14,7 @@ require './vendor/phpmailer/phpmailer/src/SMTP.php';
       $asunto    = $_POST["nombre"];
       $contenido = $_POST["mensaje"];
     //   $para      = "nef.cob@gmail.com";
-      $para      = "gbritom1@miumg.edu.gt";
+      $para      = "nef.cob@gmail.com";
      
       // Intancia de PHPMailer
       $mail = new PHPMailer();
@@ -98,7 +98,15 @@ require './vendor/phpmailer/phpmailer/src/SMTP.php';
  
       // Enviar el correo
       $mail->send();
-      echo 'El correo se envió correctamente.';
+
+      $variable = 1; 
+      $pagina = "/index.php"; // La página a la que deseas enviar la 
+      $url = $pagina . "?message=" . urlencode($variable);
+
+      header("location: " . $url);
+      exit;
     }  catch (Exception $e) {
-        echo "Hubo un error al enviar el correo: {$mail->ErrorInfo}";
+        $variable = 2; 
+        $pagina = "/index.php"; // La página a la que deseas enviar la 
+        $url = $pagina . "?message=" . urlencode($variable);
     }
