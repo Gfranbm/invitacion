@@ -223,10 +223,6 @@
               <p>Click aqui para agendar fecha en tu calendario</p>
             </div>
 
-            <div>
-            <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FGuatemala&title=BodaLeo%26Yas&src=NGRlOTU2NGI2MzRkMWYzYzc4MDkwYWZhYjIwODRlZWJmMTM3ZjM5MjIxOTdmNzA1ZmM4NmU2ZjNiYzg2ZmEzZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23795548" style="border:solid 1px #777" width="300" height="300" frameborder="0" scrolling="no"></iframe>
-            </div>
-
             <div class="fecha-titulo">
               <span class="content-titulo">Ceremonia</span>
             </div>
