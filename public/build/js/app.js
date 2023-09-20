@@ -346,7 +346,7 @@ function eventListener() {
     }, 1000);
   };
 
-  contDown("Sun Nov 5 2023 14:30:00 GMT-0600");
+  contDown("Sun Nov 5 2023 14:00:00 GMT-0600");
 
   // confirmacion por wa
 

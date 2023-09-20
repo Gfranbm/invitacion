@@ -219,8 +219,8 @@
             <div class="fecha-titulo">
               <span class="content-titulo">Fecha</span>
             </div>
-            <h2>Sábado <span>05 Noviembre 2023</span></h2>
-            <h2>02:30 P.M.</h2>
+            <h2>Domingo <span>05 Noviembre 2023</span></h2>
+            <h2>02:00 P.M.</h2>
 
             <div class="social"  id="agregar-evento">
               <a
@@ -385,7 +385,7 @@
 
       <section class="confirmacion">
         <h3>Recuerda que es importante confirmar tu asistencia, ya que nos encontramos organizando los lugares de cada invitado</h3>
-        <h3 class="maxima">Fecha máxima, <span class="dia">25</span> de Septiembre</h3>
+        <h3 class="maxima">Fecha máxima, <span class="dia">27</span> de Septiembre</h3>
         <div class="content-confirm">
           <div class="enlaces">
             <a href="" class="wa" id="wa-novio" target="_blank">
