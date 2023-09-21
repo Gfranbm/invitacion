@@ -384,6 +384,10 @@
       </div>
 
       <section class="confirmacion">
+        <div class="num-invitados">
+          <i class="fa-solid fa-user"></i>
+          <h3>Invitación para <span class="uno">1</span> persona</h3>
+        </div>
         <h3>Recuerda que es importante confirmar tu asistencia, ya que nos encontramos organizando los lugares de cada invitado</h3>
         <h3 class="maxima">Fecha máxima, <span class="dia">30</span> de Septiembre</h3>
         <div class="content-confirm">

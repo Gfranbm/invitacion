@@ -765,15 +765,20 @@ span.icon-suite {
   color: #e9e5e5;
 }
 
-p.num-invitados {
-  height: 5rem;
-  width: 5rem;
-  background-color: var(--dorado-obscuro);
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.num-invitados {
+  text-align: center;
+  color: var(--dorado);
+  padding-bottom: 2.5rem;
+}
+
+
+svg.svg-inline--fa.fa-user {
   font-size: 35px;
+}
+
+.uno{
+  font-size: 30px;
+  color: var(--verde);
 }
 
 .vestimenta p {
